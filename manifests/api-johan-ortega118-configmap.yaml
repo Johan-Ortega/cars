@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+ name: api-johan-ortega118-config
+ labels:
+   app: postgres
+data:
+ PROD_SECRET_KEY: i-love-software-dev
+ PROD_DATABASE: eyyccbnw
+ PROD_USER: eyyccbnw
+ PROD_PASSWORD: 3bEZ38Pos66b6y9hR99Izzb-u8WMz4Ic
+ PROD_HOST: mouse.db.elephantsql.com
+ PROD_PORT: "5432"

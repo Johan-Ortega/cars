@@ -1,0 +1,12 @@
+build:
+ api-johan-ortega118:  # cambiar por su namespace de okteto
+   image: okteto.dev/api-johan-ortega118:latest  # cambiar por su namespace de okteto
+
+deploy:
+ - okteto build # build the image with the latest code
+ - kubectl apply -f manifests # create all the resources in kubernetes
+dev:
+ api-johan-ortega118:
+   command: bash
+   sync:
+   - .:/cars   # cambiar por su proyecto
